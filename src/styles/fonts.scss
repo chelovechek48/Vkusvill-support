@@ -1,7 +1,18 @@
-// @font-face {
-//   font-family: 'FONTNAME';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url('@fonts/FONTNAME.woff2') format('woff2'),
-//        url('@fonts/FONTNAME.woff') format('woff');
-// }
+@font-face {
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('@fonts/Museo-Sans/museosans-500.ttf') format('truetype'),
+}
+@font-face {
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('@fonts/Museo-Sans/museosans-700.ttf') format('truetype'),
+}
+@font-face {
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 900;
+  src: url('@fonts/Museo-Sans/museosans-900.ttf') format('truetype'),
+}
