@@ -1,0 +1,10 @@
+@use './colors' as *;
+
+@mixin focus($color: $black, $width: 0.25rem, $offset: 0) {
+  color: $black;
+  outline-style: dotted;
+  outline-color: $black;
+  outline-width: $width;
+  outline-offset: $offset;
+  position: relative;
+}

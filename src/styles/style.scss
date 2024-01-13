@@ -1,6 +1,7 @@
 @forward 'normalize';
 @forward 'fonts';
 @forward 'blocks';
+@forward 'common';
 @use 'vars' as *;
 
 html {
@@ -10,10 +11,11 @@ html {
 
 .container {
   max-width: $laptop;
-  padding-left: $padding-container;
-  padding-right: $padding-container;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-left: $padding-container;
+  padding-right: $padding-container;
 }
 
 *, *::before, *::after {
