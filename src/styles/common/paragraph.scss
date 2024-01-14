@@ -1,3 +1,15 @@
 .paragraph {
   line-height: 140%;
+
+  &_size {
+    &_large {
+      font-size: 17px;
+    }
+  }
+
+  &_weight {
+    &_500 {
+      font-weight: 500;
+    }
+  }
 }
