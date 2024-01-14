@@ -1,0 +1,52 @@
+@use '../vars/' as *;
+
+.socials {
+  &__container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: clamp(1.25rem, 5vw, 2.5rem);
+    box-shadow: 0px 20px 60px 0px rgba(26, 26, 26, 0.05); 
+    border-radius: clamp(1.25rem, 5vw, 2.5rem);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(0rem, 3vw, 1rem);
+    flex-wrap: wrap;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    gap: clamp(0rem, 3vw, 1rem);
+  }
+
+  &__buttons {
+    &-wrapper {
+      flex: 1 0 12rem;
+    }
+    display: flex;
+    gap: 1rem;
+    @media (min-width: calc($mobile + 1px)) {
+      justify-content: end;
+    }
+    @media (max-width: $tablet) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__link {
+    &-wrapper {
+      flex: 0 1 3rem;
+    }
+    
+    aspect-ratio: 1;
+    background-color: $light-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: clamp(1.25rem, 5vw, 2.5rem);
+  }
+}
