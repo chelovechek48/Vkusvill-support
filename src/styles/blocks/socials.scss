@@ -1,6 +1,7 @@
 @use '../vars/' as *;
 
 .socials {
+  color: $black;
   &__container {
     max-width: 1000px;
     margin-left: auto;
