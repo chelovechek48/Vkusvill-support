@@ -1,5 +1,13 @@
+@use '../vars/' as *;
+
 .paragraph {
   line-height: 140%;
+
+  &_color {
+    &_description {
+      color: $gray;
+    }
+  }
 
   &_size {
     &_large {

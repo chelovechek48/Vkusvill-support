@@ -14,4 +14,12 @@
       font-weight: 700;
     }
   }
+
+  &_position {
+    &_center {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
 }

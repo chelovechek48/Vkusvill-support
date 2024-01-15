@@ -1,0 +1,32 @@
+@use '../vars/' as *;
+
+.help {
+  color: $black;
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    padding:
+      1.5rem
+      3rem
+      1.5rem
+      1.5rem;
+    
+    background-color: $white;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none"><path fill="%23949494" d="M.29.71a.996.996 0 0 0 0 1.41L4.17 6 .29 9.88a.996.996 0 1 0 1.41 1.41L6.29 6.7a.996.996 0 0 0 0-1.41L1.7.7C1.32.32.68.32.29.71Z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center right 1.5rem;
+
+    &-description {
+      max-width: 25rem;
+    }
+  }
+}
