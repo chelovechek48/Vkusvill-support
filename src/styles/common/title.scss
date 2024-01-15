@@ -6,8 +6,11 @@
       font-weight: 900;
     }
     &_h2 {
-      font-size: 2.5rem;
       font-size: clamp(1.5rem, 6vw, 2.5rem);
+      font-weight: 700;
+    }
+    &_h3 {
+      font-size: clamp(1rem, 6vw, 1.25rem);
       font-weight: 700;
     }
   }

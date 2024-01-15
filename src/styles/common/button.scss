@@ -1,17 +1,16 @@
 @use '../vars/' as *;
 
 .button {
+  outline-width: 0;
+  outline-color: transparent;
   transition:
-    box-shadow 0.2s,
-    color 0.2s;
-  &:hover {
-    color: $black;
-    box-shadow: 0 0 0 0.25rem $black;
-  }
+    color 0.2s,
+    outline 0.1s;
   &:focus-visible {
-    transition:
-      box-shadow 0.2s,
-      color 0s;
+    transition: all 0s;
     @include focus;
+  }
+  &:hover {
+    @include hover;
   }
 }

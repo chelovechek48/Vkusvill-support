@@ -1,0 +1,66 @@
+@use '../vars/' as *;
+
+.FAQ {
+  color: $black;
+
+  &__title {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__swiper {
+    position: relative;
+    margin-right: $padding-container;
+    margin-left: $padding-container;
+
+    &-nav {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+
+      width: 2.75rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+
+      box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.09);
+      background-color: $white;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none"><path fill="currentColor" d="M.29.71a.996.996 0 0 0 0 1.41L4.17 6 .29 9.88a.996.996 0 1 0 1.41 1.41L6.29 6.7a.996.996 0 0 0 0-1.41L1.7.7C1.32.32.68.32.29.71Z"/></svg>');
+      background-repeat: no-repeat;
+      background-position: center;
+      &-prev {
+        left: 0;
+        transform: translateY(-50%) rotate(180deg);
+      }
+      &-next {
+        right: 0;
+        transform: translateY(-50%);
+      }
+      
+      transition: 0.1s;
+      &:hover, &:focus {
+        @include hover;
+      }
+
+      &[disabled] {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__link {
+    &-wrapper {
+      width: min(20rem, 100%);
+    }
+    display: flex;
+    gap: 0.75rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+}

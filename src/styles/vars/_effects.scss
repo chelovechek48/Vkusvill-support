@@ -3,8 +3,15 @@
 @mixin focus($color: $black, $width: 0.25rem, $offset: 0) {
   color: $black;
   outline-style: dotted;
-  outline-color: $black;
+  outline-color: $color;
   outline-width: $width;
   outline-offset: $offset;
-  position: relative;
+}
+
+@mixin hover($color: $black, $width: 0.25rem, $offset: 0) {
+  color: $black;
+  outline-style: solid;
+  outline-color: $color;
+  outline-width: $width;
+  outline-offset: $offset;
 }
