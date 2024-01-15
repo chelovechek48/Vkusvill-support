@@ -15,3 +15,7 @@
   outline-width: $width;
   outline-offset: $offset;
 }
+
+@mixin box-shadow($blur: 30px, $width: 0px) {
+  box-shadow: 0px 0px $blur $width rgba(0, 0, 0, 0.1);
+}
