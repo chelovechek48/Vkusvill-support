@@ -17,9 +17,8 @@
 
   &_position {
     &_center {
-      margin-bottom: 2rem;
-      display: flex;
-      justify-content: center;
+      margin-bottom: clamp(1rem, 5vw, 2rem);
+      text-align: center;
     }
   }
 }

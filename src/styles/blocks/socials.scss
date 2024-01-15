@@ -3,7 +3,7 @@
 .socials {
   color: $black;
   &__container {
-    max-width: 1000px;
+    max-width: $tablet;
     margin-left: auto;
     margin-right: auto;
     padding: clamp(1.25rem, 5vw, 2.5rem);
