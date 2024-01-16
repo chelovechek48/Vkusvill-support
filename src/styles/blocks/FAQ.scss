@@ -2,12 +2,14 @@
 
 .FAQ {
   color: $black;
+  overflow-x: hidden;
+  padding-bottom: 3rem;
+  margin-bottom: -3rem;
 
   &__swiper {
     position: relative;
     margin-right: $padding-container;
     margin-left: $padding-container;
-    max-width: 100vw;
 
     &-nav {
       position: absolute;
